@@ -15,7 +15,7 @@ class TeamController {
         }else{
             team = await Worker.findAll({where: {name: name, position: position}})
         }
-        return res.json({team})
+        return res.json(team)
     }
 }
 
